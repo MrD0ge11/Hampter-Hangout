@@ -1,7 +1,7 @@
 //My 2 number code
 let n1 = prompt("Choose number 1: ");
 let n2 = prompt("Choose number 2: ");
-let operation = prompt("Choose an operation: ");
+let operation = prompt("Choose an operation {Subtract, Add, Multiply, Divide}: ");
 
 if (operation === "Subtract") {
     let Subtract = Number(n1) - Number(n2);
@@ -46,7 +46,7 @@ let n2 = prompt("Choose number 2: ");
 let n3 = prompt("Choose number 3: ")
 let n4 = prompt("Choose number 4: ")
 
-let operation = prompt("Choose an operation: ");
+let operation = prompt("Choose an operation {Subtract, Add, Multiply, Divide}: ");
 
 if (operation === "Subtract") {
     let Subtract = Number(n1) - Number(n2) - Number(n3) - Number(n4);
