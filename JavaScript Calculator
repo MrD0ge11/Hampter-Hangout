@@ -1,0 +1,65 @@
+//My 2 number code
+let n1 = prompt("Choose number 1: ");
+let n2 = prompt("Choose number 2: ");
+let operation = prompt("Choose an operation: ");
+
+if (operation === "Subtract") {
+    let Subtract = Number(n1) - Number(n2);
+    console.log(`Subtract: ${Subtract}.`);
+} else if (operation === "Add") {
+    let Add = Number(n1) + Number(n2);
+    console.log(`Add: ${Add}.`);
+} else if (operation === "Divide") {
+    let Divide = Number(n1) / Number(n2);
+    console.log(`Divide: ${Divide}.`);
+} else if (operation === "Multiply") {
+    let Multiply = Number(n1) * Number(n2);
+    console.log(`Multiply: ${Multiply}.`);
+} else {
+    console.log("This operation does not exist. Subtract, Add, Multiply, Divide.");
+}
+
+//Daniels
+let n1 = prompt("Choose number 1: ");
+let n2 = prompt("Choose number 2: ");
+let operation = prompt("Choose an operation: ");
+
+if (operation === "sub") {
+    let sub = Number(n1) - Number(n2);
+    console.log(`Sub: ${sub}.`);
+} else if (operation === "sum") {
+    let sum = Number(n1) + Number(n2);
+    console.log(`Sum: ${sum}.`);
+} else if (operation === "div") {
+    let div = Number(n1) / Number(n2);
+    console.log(`Div: ${div}.`);
+} else if (operation === "mult") {
+    let mult = Number(n1) * Number(n2);
+    console.log(`Mult: ${mult}.`);
+} else {
+    console.log("Yo, this operation does not exist!");
+}
+
+//My 4 number code
+let n1 = prompt("Choose number 1: ");
+let n2 = prompt("Choose number 2: ");
+let n3 = prompt("Choose number 3: ")
+let n4 = prompt("Choose number 4: ")
+
+let operation = prompt("Choose an operation: ");
+
+if (operation === "Subtract") {
+    let Subtract = Number(n1) - Number(n2) - Number(n3) - Number(n4);
+    console.log(`Subtract: ${Subtract}.`);
+} else if (operation === "Add") {
+    let Add = Number(n1) + Number(n2) + Number(n3) + Number (n4);
+    console.log(`Add: ${Add}.`);
+} else if (operation === "Divide") {
+    let Divide = Number(n1) / Number(n2) / Number(n3) / Number(n4);
+    console.log(`Divide: ${Divide}.`);
+} else if (operation === "Multiply") {
+    let Multiply = Number(n1) * Number(n2) * Number(n3) * Number(n4);
+    console.log(`Multiply: ${Multiply}.`);
+} else {
+    console.log("This operation does not exist. Subtract, Add, Multiply, Divide.");
+}
