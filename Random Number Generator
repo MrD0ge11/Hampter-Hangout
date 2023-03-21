@@ -1,0 +1,8 @@
+let x = Math.floor(Math.random() * 100000000000) + 1;
+let y = Math.floor(Math.random() * 100000000000) + 1;
+let z = Math.floor(Math.random() * 100000000000) + 1;
+console.log(x);
+console.log(y);
+console.log(z);
+let words = prompt("3 Random Numbers Generated!")
+//Website used https://www.programiz.com/javascript/online-compiler/
