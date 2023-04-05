@@ -1,0 +1,31 @@
+let matrix = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']]
+for (let index = 0; index < 3; index++) {
+    console.log(`${matrix[index]}`);
+}
+
+console.log(``);
+let row = 1
+let col = 2
+matrix[col][row] = 'X';
+matrix[col][row]
+for (let index = 0; index < 3; index++) {
+}
+
+console.log("Format: Two, One First number is your column and second is the row")
+let p1 = prompt("Choose column and row, Player 1: ");
+let p2 = prompt("Choose column and row, Player 2: ");
+if (p1 === "Two, One") {
+    let Two, One = console.log(`${matrix[index]}`)
+} else if (p1 === "Two, Second") {
+    let Two, Second = console.log(`${matrix[index]}`)
+} else if (p1 === "Two, Zero") {
+    let Two, Zero = console.log(`${matrix[index]}`)
+} 
+
+if (p2 === "Two, One") {
+    let Two, One = console.log(`${matrix[index]}`)
+} else if (p2 === "Two, Second") {
+    let Two, Second = console.log(`${matrix[index]}`)
+} else if (p2 === "Two, Zero") {
+    let Two, Zero = console.log(`${matrix[index]}`)
+} 
