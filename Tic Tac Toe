@@ -1,0 +1,22 @@
+//initialize matrix with defualt values
+let matrix = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']]
+//interate over the matrix printing all rows
+for (let index = 0; index < 3; index++) {
+    console.log(`${matrix[index]}`);
+}
+
+for (let turn = 0; turn < 9; turn++) {
+    console.log(turn)
+    //get row and column from user
+    let row = prompt("Choose row, player 1: ");
+    let col = prompt("Choose column, player 1: ");
+    //convert the string into numbers
+    let rowNumber = Number(row)
+    let colNumber = Number(col)
+    
+    matrix[row][col] = "X"
+    //interate over the matrix printing all rows
+    for (let index = 0; index < 3; index++) {
+        console.log(`${matrix[index]}`);
+    }
+}
