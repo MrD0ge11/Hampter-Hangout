@@ -1,0 +1,37 @@
+//initialize matrix with defualt values
+console.log ("0 Is equal to one, 1 is equal to two, and 2 is equal to three.")
+let matrix = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']]
+//interate over the matrix printing all rows
+for (let index = 0; index < 3; index++) {
+    console.log(`${matrix[index]}`);
+}
+
+for (let turn = 0; turn < 9; turn++) {
+    console.log(turn)
+    //get row and column from user
+    let row = 0;
+    let col = 0;
+    // This means turn is an even number
+    if (turn % 2 == 0) {
+        row = prompt("Choose row, player 1: ");
+        col = prompt("Choose column, player 1: ");
+    }
+    else {
+        // this means turn is an odd number
+        row = prompt("Choose row, player 2: ");
+        col = prompt("Choose column, player 2: ");
+        let rowNumber = Number(row)
+    let colNumber = Number(col)
+    
+    matrix[rowNumber][colNumber] = "O"
+    
+    for (let index = 0; index < 3; index++) {
+        console.log(`${matrix[index]}`);
+    }
+    }
+    //convert the string into numbers
+    let rowNumber = Number(row)
+    let colNumber = Number(col)
+    
+    matrix[rowNumber][colNumber] = "X"
+}
