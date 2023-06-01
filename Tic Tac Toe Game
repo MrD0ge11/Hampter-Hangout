@@ -1,35 +1,54 @@
-//initialize matrix with defualt values
-console.log ("0 Is equal to one, 1 is equal to two, and 2 is equal to three.")
-let matrix = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']]
-//interate over the matrix printing all rows
+console.log("0 is equal to one, 1 is equal to two, and 2 is equal to three.");
+let matrix = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']];
+
+// Iterate over the matrix, printing all rows
 for (let index = 0; index < 3; index++) {
-    console.log(`${matrix[index]}`);
+  console.log(`${matrix[index]}`);
 }
 
+let selectedPositions = [];
+
 for (let turn = 0; turn < 9; turn++) {
-    //get row and column from user
-    let row = 0;
-    let col = 0;
-    // This means turn is an even number
+  let row = 0;
+  let col = 0;
+  let rowNumber = 0;
+  let colNumber = 0;
+
+  // Repeat until a valid position is chosen
+  while (true) {
     if (turn % 2 == 0) {
-        row = prompt("Choose row, player 1: ");
-        col = prompt("Choose column, player 1: ");
-        let rowNumber = Number(row)
-        let colNumber = Number(col)
-    
-        matrix[rowNumber][colNumber] = "X"
+      row = prompt("Choose row, player 1: ");
+      col = prompt("Choose column, player 1: ");
+    } else {
+      row = prompt("Choose row, player 2: ");
+      col = prompt("Choose column, player 2: ");
     }
-    else {
-        // this means turn is an odd number
-        row = prompt("Choose row, player 2: ");
-        col = prompt("Choose column, player 2: ");
-        let rowNumber = Number(row)
-        let colNumber = Number(col)
-        
-        matrix[rowNumber][colNumber] = "O"
+
+    rowNumber = Number(row);
+    colNumber = Number(col);
+
+    if (
+      rowNumber >= 0 &&
+      rowNumber <= 2 &&
+      colNumber >= 0 &&
+      colNumber <= 2 &&
+      !selectedPositions.includes(`${rowNumber},${colNumber}`)
+    ) {
+      // Valid position chosen
+      selectedPositions.push(`${rowNumber},${colNumber}`);
+      break;
+    } else {
+      console.log("Invalid position. Please choose a valid row and column.");
     }
-    
-    for (let index = 0; index < 3; index++) {
-        console.log(`${matrix[index]}`);
-    }
+  }
+
+  if (turn % 2 == 0) {
+    matrix[rowNumber][colNumber] = "X";
+  } else {
+    matrix[rowNumber][colNumber] = "O";
+  }
+
+  for (let index = 0; index < 3; index++) {
+    console.log(`${matrix[index]}`);
+  }
 }
